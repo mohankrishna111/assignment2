@@ -1,0 +1,41 @@
+<html>
+  <head>
+	
+	<style>
+		.right{
+			float:right;
+			width:700px;
+			height:700px;
+			}
+	</style>
+	
+       <script src="//cdnjs.cloudflare.com/ajax/libs/highlight1.js/9.13.1/highlight.min.js"></script>
+       <link href="http://cdnjs.cloudflare.com/ajax/libs/highlight1.js/9.13.1/styles/default.min.css" rel="stylesheet" />
+        <script>hljs.initHighlightingOnLoad();</script>
+
+		
+	</head>
+  <body>
+	<div class="left" >
+		<h1>hi......</h1>
+		Enter your name:<input type="text"><br>
+             
+	</div>
+	
+	<div class="right">
+			<pre><code class="javascript">
+			<script>
+			function showSource(){
+				var source = "<html>";
+			 source += document.getElementsByTagName('html')[0].innerHTML;
+			 source += "</html>";
+			 source = source.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+			 source = "<pre>"+source+"</pre>";
+			 document.writeln(source);
+			}
+			showSource();
+			</script>
+			</code></pre>
+  </div>
+  </body>
+</html>
